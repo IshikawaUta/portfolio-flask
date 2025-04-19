@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}Tentang Saya - Portofolio{% endblock %}
+
+{% block content %}
+    <section class="about">
+        <center>
+            <h2>Tentang Saya</h2>
+        <img src="{{ url_for('static', filename='images/ekasaputra.jpg') }}" alt="Foto Tentang Saya" class="profile-image">
+        </center>
+        <div class="align">
+        <p>
+            Halo! Nama saya Eka saputra. Saya adalah seorang Web developer.
+            Saya sedang belajar memperdalam tentang web design, linux admin, dan cybersecurity.
+            Saya memiliki pengalaman dalam pengembangan web menggunakan Python dan Flask, Linux administration, analisis data, dll.
+            Saya telah bekerja pada berbagai proyek yang dengan menggunakan gatsby, astro, flask dll.
+            Saya memiliki beberapa sertifikat diantaranya: python fundamental dan linux fundamental.
+            Di luar pekerjaan, saya juga tertarik pada karya seni.
+            Saya percaya bahwa seorang pemimpin harus mampu memberikan teladan,
+            dan seseorang ditengah kesibukannya harus juga mampu membangkitkan atau menggugah semangat.
+        </p>
+        </div>
+        <p class="underline"></p>
+
+        <h3>Keahlian Tambahan</h3>
+        <ul>
+            <li>Menguasai HTML</li>
+            <li>Menguasai Python</li>
+            <li>Menguasai Linux</li>
+        </ul>
+        <p class="underline"></p>
+
+        <h3>Project</h3>
+        <ul>
+            <li><strong>Metasploit</strong> - Installasi</li>
+            <li>Cara menginstall dan menjalankan tools metasploit</li>
+            <li><strong>Hydra</strong> - Installasi</li>
+            <li>Cara menginstall dan menjalankan tools Hydra</li>
+        </ul>
+        <p class="underline"></p>
+
+        <h3>Pendidikan</h3>
+        <ul>
+            <li><strong>SMA AL-HUSNA YPIHN CURUG</strong> - (2023)</li>
+            <li>Dan sekarang saya sedang menempuh Pendidikan untuk gelar S.Kom</li>
+        </ul>
+
+        <p>
+            Terima kasih telah mengunjungi halaman tentang saya! Jangan ragu untuk <a href="{{ url_for('contact') }}">menghubungi saya</a> jika Anda memiliki pertanyaan atau ingin berkolaborasi.
+        </p>
+    </section>
+    <br>
+    <br>
+{% endblock %}

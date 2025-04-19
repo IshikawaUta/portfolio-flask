@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Beranda - Portofolio{% endblock %}
+
+{% block content %}
+    <section class="hero">
+        <img src="{{ url_for('static', filename='images/ekasaputra.jpg') }}" alt="Foto Profil Saya">
+        <h2>Halo, Saya Eka saputra</h2>
+        <p class="underline-home">Saya adalah seorang Programer, Saya telah membuat banyak project seperti: web portfolio, web blogger, web educations, dll.</p>
+        <a href="{{ url_for('projects') }}" class="button">Lihat Proyek Saya</a>
+    </section>
+
+    <section class="skills">
+        <h3>Keahlian</h3>
+        <ul>
+            <li class="text">HTML</li>
+            <li class="text">CSS</li>
+            <li class="text">Python</li>
+            <li class="text">Flask</li>
+            <li class="space">Linux admin</li>
+            </ul>
+    </section>
+    <br>
+    <br>
+    <br>
+{% endblock %}
