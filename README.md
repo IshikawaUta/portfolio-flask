@@ -1,4 +1,4 @@
-## Portfolio dengan flask python library
+## Portfolio dengan flask framework
 ### Installasi flask
 - Install from apt package
 ```bash
